@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maqueta 2</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: antiquewhite;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            width: 100%;
+        }
+
+        [class^="caja"] {
+            min-height: 169px;
+            padding: 20px;
+            border: 2px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .caja1 {
+            background-color: #372E2D;
+            color: white;
+            grid-column: span 12;
+        }
+
+        .caja2 {
+            background-color: #C9423E;
+            color: white;
+            grid-column: span 3;
+        }
+
+        .caja3 {
+            background-color: #F4AC3C;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja4 {
+            background-color: #C9958D;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja5 {
+            background-color: #79B8A4;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja6 {
+            background-color: #E93835;
+            color: white;
+            grid-column: span 12;
+        }
+
+        .caja7 {
+            background-color: #8FAADC;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja8 {
+            background-color: #D8B4E2;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja9 {
+            background-color: #F2D388;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        .caja10 {
+            background-color: #80CBC4;
+            color: #222;
+            grid-column: span 3;
+        }
+
+        @media (min-width: 576px) and (max-width: 991px) {
+
+            .contenedor {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            .caja1,
+            .caja2,
+            .caja3 {
+                grid-column: span 2;
+            }
+
+            .caja4,
+            .caja5 {
+                grid-column: span 3;
+            }
+
+            .caja6,
+            .caja7,
+            .caja8 {
+                grid-column: span 2;
+            }
+
+            .caja9,
+            .caja10 {
+                grid-column: span 3;
+            }
+        }
+
+        @media (max-width: 575px) {
+
+            .contenedor {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            [class^="caja"] {
+                min-height: 120px;
+                padding: 10px;
+                font-size: 18px;
+            }
+
+            .caja1,
+            .caja2 {
+                grid-column: span 3;
+            }
+
+            .caja3 {
+                grid-column: span 2;
+            }
+
+            .caja4,
+            .caja5 {
+                grid-column: span 1;
+            }
+
+            .caja6 {
+                grid-column: span 2;
+            }
+
+            .caja7,
+            .caja8 {
+                grid-column: span 1;
+            }
+
+            .caja9,
+            .caja10 {
+                grid-column: span 3;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="caja1">Caja 1</div>
+        <div class="caja2">Caja 2</div>
+        <div class="caja3">Caja 3</div>
+        <div class="caja4">Caja 4</div>
+        <div class="caja5">Caja 5</div>
+        <div class="caja6">Caja 6</div>
+        <div class="caja7">Caja 7</div>
+        <div class="caja8">Caja 8</div>
+        <div class="caja9">Caja 9</div>
+        <div class="caja10">Caja 10</div>
+
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
